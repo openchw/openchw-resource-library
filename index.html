@@ -54,6 +54,17 @@
       padding: 16px;
       background: #fff;
     }
+    .resource-list {
+      list-style: none;
+      padding-left: 0;
+      margin: 0;
+    }
+    .resource-list li {
+      border-top: 1px solid var(--border);
+      padding: 14px 0;
+    }
+    .resource-list li:first-child { border-top: 0; }
+    .resource-title { display: block; margin-bottom: 4px; }
     a { color: var(--accent); font-weight: 700; }
     code {
       background: #eef2f7;
@@ -80,6 +91,16 @@
       <h2>Purpose</h2>
       <p>This site is a public reference library for final, approved OpenCHW materials. Drafts and working documents should stay in Google Workspace or internal project folders until approved for public use.</p>
       <p class="muted">Use stable PDF URLs from this site in OpenCHW CSV files, resource directories, program content, and referral-support materials.</p>
+    </section>
+
+    <section>
+      <h2>Available materials</h2>
+      <ul class="resource-list">
+        <li>
+          <a class="resource-title" href="/materials/sessions/Session%201%20-%20Caregiver%20Quick%20Start%20Handout.pdf">Session 1 - Caregiver Quick Start Handout</a>
+          <span class="muted">Caregiver session handout PDF</span>
+        </li>
+      </ul>
     </section>
 
     <section>
