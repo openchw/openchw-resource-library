@@ -1,0 +1,131 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>OpenCHW Resource Library</title>
+  <meta name="description" content="Public OpenCHW resource library for approved caregiver, senior center, grant, and program reference materials." />
+  <style>
+    :root {
+      --bg: #f7f8fa;
+      --panel: #ffffff;
+      --text: #1f2937;
+      --muted: #5f6b7a;
+      --border: #d8dee7;
+      --accent: #23436f;
+    }
+    body {
+      margin: 0;
+      font-family: Arial, Helvetica, sans-serif;
+      background: var(--bg);
+      color: var(--text);
+      line-height: 1.55;
+    }
+    header {
+      background: var(--accent);
+      color: #fff;
+      padding: 48px 24px;
+    }
+    main {
+      max-width: 960px;
+      margin: 0 auto;
+      padding: 32px 20px 60px;
+    }
+    h1, h2, h3 { line-height: 1.2; }
+    h1 { margin: 0 0 12px; font-size: 2.25rem; }
+    header p { margin: 0; max-width: 760px; font-size: 1.1rem; }
+    section {
+      background: var(--panel);
+      border: 1px solid var(--border);
+      border-radius: 14px;
+      padding: 24px;
+      margin: 18px 0;
+      box-shadow: 0 1px 2px rgba(0,0,0,0.04);
+    }
+    .muted { color: var(--muted); }
+    .grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+      gap: 16px;
+    }
+    .card {
+      border: 1px solid var(--border);
+      border-radius: 12px;
+      padding: 16px;
+      background: #fff;
+    }
+    a { color: var(--accent); font-weight: 700; }
+    code {
+      background: #eef2f7;
+      padding: 2px 6px;
+      border-radius: 6px;
+    }
+    footer {
+      border-top: 1px solid var(--border);
+      margin-top: 28px;
+      padding-top: 20px;
+      color: var(--muted);
+      font-size: 0.95rem;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>OpenCHW Resource Library</h1>
+    <p>Approved public materials for caregiver support, senior center programs, pilot resources, grants, forms, and reference documents.</p>
+  </header>
+
+  <main>
+    <section>
+      <h2>Purpose</h2>
+      <p>This site is a public reference library for final, approved OpenCHW materials. Drafts and working documents should stay in Google Workspace or internal project folders until approved for public use.</p>
+      <p class="muted">Use stable PDF URLs from this site in OpenCHW CSV files, resource directories, program content, and referral-support materials.</p>
+    </section>
+
+    <section>
+      <h2>Library areas</h2>
+      <div class="grid">
+        <div class="card">
+          <h3>Caregiver sessions</h3>
+          <p>Session handouts, slide exports, and approved caregiver education packets.</p>
+          <p><code>/materials/sessions/</code></p>
+        </div>
+        <div class="card">
+          <h3>Resource directories</h3>
+          <p>Local and regional caregiver resource PDFs, partner lists, and service guides.</p>
+          <p><code>/materials/resource-directories/</code></p>
+        </div>
+        <div class="card">
+          <h3>Forms</h3>
+          <p>Public preview forms, intake guides, enrollment support, and non-private templates.</p>
+          <p><code>/materials/forms/</code></p>
+        </div>
+        <div class="card">
+          <h3>Grants and references</h3>
+          <p>Grant support materials, policy references, program summaries, and public briefs.</p>
+          <p><code>/materials/grants/</code></p>
+        </div>
+      </div>
+    </section>
+
+    <section>
+      <h2>Example public PDF paths</h2>
+      <p>After PDFs are uploaded, their URLs should follow this pattern:</p>
+      <ul>
+        <li><code>https://openchw.org/materials/sessions/session-1-caregiver-orientation.pdf</code></li>
+        <li><code>https://openchw.org/materials/resource-directories/sumner-county-caregiver-resources.pdf</code></li>
+        <li><code>https://openchw.org/materials/forms/caregiver-intake-preview.pdf</code></li>
+      </ul>
+    </section>
+
+    <section>
+      <h2>Publication rule</h2>
+      <p>Only upload materials that are approved for public viewing. Do not upload private caregiver data, case notes, protected health information, internal credentials, private partner lists, or draft documents that have not been approved by the program owner.</p>
+    </section>
+
+    <footer>
+      <p>OpenCHW Resource Library. Public program and caregiver-support materials.</p>
+    </footer>
+  </main>
+</body>
+</html>
